@@ -99,7 +99,7 @@ def move():
 
     # Check boundary conditions
     for position, move in positions.items():
-        if position['x'] < 0 or position['y'] < 0:
+        if position['x'] < 0 or position['x'] > width or position['y'] < 0 or position['y'] > height:
             moves[move] -= 10
 
     # Check for occupied and risky spaces
